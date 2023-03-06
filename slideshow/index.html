@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slideshow</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="slideshow-container">
+      <div class="slides">
+        <img src="./images/img1.jpg" style="width: 100%;" />
+      </div>
+      <div class="slides">
+        <img src="./images/img2.jpg" style="width: 100%;" />
+      </div>
+      <div class="slides">
+        <img src="./images/img3.jpg" style="width: 100%;" />
+      </div>
+      <a class="prev" onclick="controller(-1)">&#10094;</a>
+      <a class="next" onclick="controller(+1)">&#10095;</a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
