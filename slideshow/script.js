@@ -1,19 +1,20 @@
-let slideIndex = 0;
+let slidIndex = 0;
 
 function controller(c) {
-  slideIndex = slideIndex + c;
-  showSlides(slideIndex);
+  slidIndex = slidIndex + 1;
+  slideShow(slidIndex);
 }
-showSlides(slideIndex);
 
-function showSlides(n) {
+slideShow(slidIndex);
+
+function slideShow(n) {
   let slides = document.getElementsByClassName("slides");
   if (n === slides.length) {
-    slideIndex = 0;
+    slidIndex = 0;
     n = 0;
   }
   if (n < 0) {
-    slideIndex = slides.length - 1;
+    slidIndex = slides.length - 1;
     n = slides.length - 1;
   }
   for (let i = 0; i < slides.length; i++) {
